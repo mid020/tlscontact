@@ -64,9 +64,9 @@ if __name__ == '__main__':
             retry = False
             logging.info('Starting...')
             with get_selenium_driver(args.selenium_executor) as driver:
-                driver.get('https://fr.tlscontact.com/gb/LON/login.php')
+                driver.get('https://visa-fr.tlscontact.com/ma/CAS/login.php')
                 WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'email')))
-                driver.get('https://fr.tlscontact.com/gb/LON/login.php')
+                driver.get('https://visa-fr.tlscontact.com/ma/CAS/login.php')
                 email = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'email')))
                 email.send_keys(args.login)
                 driver.find_element_by_id('pwd').send_keys(args.password)
