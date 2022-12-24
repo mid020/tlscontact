@@ -40,7 +40,7 @@ to [register a Telegram Bot](https://core.telegram.org/bots#6-botfather) and pro
 Clone this repo locally:
 
 ```
-git clone https://github.com/andrey-yantsen/tlscontact-appointment-finder.git
+git clone https://github.com/mid020/tlscontact.git
 ```
 
 And run it using following command, replacing arguments with proper values:
